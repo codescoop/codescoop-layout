@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WisdomBits - Learn. Share. Build.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom glass effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-slate-900 via-indigo-900 to-gray-900 text-white font-sans">
+
+<!-- 1. Landing Page -->
+<section class="min-h-screen bg-white text-gray-900">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow">
+    <h1 class="text-2xl font-bold">CodeScoop.dev</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#features" class="hover:underline">Features</a>
+      <a href="#resources" class="hover:underline">Resources</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6 bg-gradient-to-br from-blue-50 to-white">
+    <h2 class="text-4xl font-bold mb-4">Ace Interviews & Build Real Projects</h2>
+    <p class="text-lg text-gray-600 mb-6">Code, Practice, and Learn by Doing with CodeScoop</p>
+    <a href="#features" class="inline-block bg-black text-white px-6 py-3 rounded hover:bg-gray-800">Explore Features</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 px-6 text-center max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">What is CodeScoop?</h3>
+    <p class="text-gray-600">CodeScoop is a modern platform providing interview prep, project-based learning, and an online JS compiler—all in one place.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-12 px-6 bg-gray-50">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="p-6 bg-white rounded shadow">
+        <h4 class="font-semibold text-lg mb-2">Learn by Doing</h4>
+        <p class="text-gray-500">Explore real-world projects and enhance your skills by building.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h4 class="font-semibold text-lg mb-2">Interview Prep</h4>
+        <p class="text-gray-500">Practice DSA, React, and System Design questions with difficulty filters.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h4 class="font-semibold text-lg mb-2">Online JS Compiler</h4>
+        <p class="text-gray-500">Write, run, and debug JavaScript code instantly in the browser.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="py-12 px-6">
+    <h3 class="text-2xl font-bold mb-6 text-center">Most Downloaded Projects</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Next.js Blog</h4>
+        <p class="text-gray-500 text-sm">A full-stack blog with markdown support</p>
+      </div>
+      <!-- More cards -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white p-6 text-center mt-12">
+    <p>© 2025 CodeScoop.dev. All rights reserved.</p>
+  </footer>
+</section>
+
+<!-- 2. Resource Hub Page -->
+<section class="min-h-screen bg-white p-8">
+  <header class="mb-6">
+    <h2 class="text-3xl font-bold text-gray-800">Resource Hub</h2>
+  </header>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <!-- Filters -->
+    <aside class="md:col-span-1">
+      <h3 class="font-semibold mb-2">Filter by Technology</h3>
+      <ul class="space-y-2">
+        <li><button class="w-full text-left hover:underline">React</button></li>
+        <li><button class="w-full text-left hover:underline">Node.js</button></li>
+        <li><button class="w-full text-left hover:underline">Next.js</button></li>
+        <li><button class="w-full text-left hover:underline">System Design</button></li>
+      </ul>
+    </aside>
+    <!-- Cards -->
+    <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="border p-4 rounded-lg shadow hover:shadow-lg">
+        <h4 class="font-semibold text-lg">Build a Blog in Next.js</h4>
+        <p class="text-sm text-gray-500 mt-2">Hands-on project to learn full-stack development</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Resource Details Page -->
+<section class="p-8 bg-gray-50 min-h-screen">
+  <article class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+    <h2 class="text-2xl font-bold mb-4">Build a Blog in Next.js</h2>
+    <p class="text-gray-700 mb-6">Learn routing, API routes, and SSR with this Next.js project.</p>
+    <ul class="list-disc list-inside mb-4">
+      <li>Setup project</li>
+      <li>Create pages</li>
+      <li>Connect to CMS or Markdown</li>
+      <li>Deploy</li>
+    </ul>
+    <a href="#" class="text-blue-600 hover:underline">Start Building →</a>
+  </article>
+</section>
+
+<!-- 4. Interview Prep Page -->
+<section class="p-8 bg-white min-h-screen">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Interview Preparation</h2>
+    <div class="flex flex-wrap gap-4">
+      <a href="#" class="bg-gray-100 px-4 py-2 rounded hover:bg-gray-200">DSA</a>
+      <a href="#" class="bg-gray-100 px-4 py-2 rounded hover:bg-gray-200">System Design</a>
+      <a href="#" class="bg-gray-100 px-4 py-2 rounded hover:bg-gray-200">React</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Question List Page -->
+<section class="p-8 bg-slate-100 min-h-screen">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">DSA Questions</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Two Sum</h4>
+        <p class="text-sm text-gray-500">Difficulty: Easy</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">LRU Cache</h4>
+        <p class="text-sm text-gray-500">Difficulty: Medium</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Word Ladder</h4>
+        <p class="text-sm text-gray-500">Difficulty: Hard</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </body>
+</html>
